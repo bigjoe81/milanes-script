@@ -1,0 +1,44 @@
+{
+  "scopeName": "source.milanescript",
+  "patterns": [
+    {
+      "name": "comment.line.double-slash.milanescript",
+      "match": "//.*$"
+    },
+    {
+      "name": "comment.block.milanescript",
+      "begin": "/\\*",
+      "end": "\\*/"
+    },
+    {
+      "name": "string.quoted.double.milanescript",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "match": "\\\\.",
+          "name": "constant.character.escape"
+        }
+      ]
+    },
+    {
+      "name": "string.quoted.single.milanescript",
+      "begin": "'",
+      "end": "'",
+      "patterns": [
+        {
+          "match": "\\\\.",
+          "name": "constant.character.escape"
+        }
+      ]
+    },
+    {
+      "name": "keyword.control.milanescript",
+      "match": "(?<![\\p{L}\\p{N}_])(?:tocca_minga|mettem|roba|fà_su|ciapa|se|se_de_no|se_invece|sì_ostia|no_ostia|nient|sà_minga|ciàcera|numer|sì_o_no|quel_che_te_voret|un_bel_nient|sciora|come_l_ha_de_vess|famm_un|mi|porta_denter|mètt_foeura|fà_con_calma|spècia|pròva|porca_miseria|va_a_dà_via_el_cù|ciàpa_sù|basta_inscì|va_innanz|privaa|pubblegh|per_ogni|fin_che|da)(?![\\p{L}\\p{N}_])"
+    },
+    {
+      "name": "constant.numeric.milanescript",
+      "match": "\\b\\d+(?:\\.\\d+)?\\b"
+    }
+  ]
+}
