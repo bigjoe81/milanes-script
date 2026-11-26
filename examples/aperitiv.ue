@@ -1,0 +1,6 @@
+tocca_minga danè: numer = 15;
+se (danè >= 10) {
+  ciàpa_sù("Andemm a bev!");
+} se_de_no {
+  ciàpa_sù("Va a laurà!");
+}
